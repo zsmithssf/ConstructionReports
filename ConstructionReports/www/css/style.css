@@ -1,1 +1,18 @@
-/* Empty. Add your own CSS if you like */
+.item-input {
+  margin: 5px 0px;
+}
+.has-errors {
+  border: 1px solid red;
+}
+.row {
+  padding: 0 !important;
+  text-align: center;
+}
+.col {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 1;
+}
+.col-left {
+  text-align: left;
+}

@@ -1,0 +1,29 @@
+<ion-view view-title="New Report">
+    <ion-content class="padding">
+        <form name="reportForm" novalidate ng-submit="reportSubmitForm(reportForm)">
+            <div class="list">
+                <label class="item item-input item-select">
+                    <div class="input-label" ng-show="getState(severity.id)">
+                        Select Severity
+                    </div>
+                    <select>
+                        <option>Default</option>
+                        <option ng-repeat="severity in severityList">{{severity.name}}</option>
+                    </select>
+                </label>
+                <label class="item item-input item-select">
+                    <div class="input-label" ng-show="getState(trade.id)">
+                        Select Trade
+                    </div>
+                    <select>
+                        <option>Default</option>
+                        <option ng-repeat="trade in tradeList">{{trade.name}}</option>
+                    </select>
+                </label>
+            </div>
+            <button type="submit" class="button button-block button-energized">
+                Submit Report
+            </button>
+        </form>
+    </ion-content>
+</ion-view>

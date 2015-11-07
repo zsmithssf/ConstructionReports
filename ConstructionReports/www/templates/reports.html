@@ -1,0 +1,24 @@
+<ion-view view-title="Reports">
+  <ion-content>
+    <div ng-repeat="report in reportsList" class="padding">
+      <a ng-click="setState(report.id)">{{report.title}}</a>
+      <div ng-show="getState(report.id)">
+        <ion-item ng-show="getState(report.id)">
+          <div class="col col-left">
+            Description: {{report.description}}
+          </div>
+        </ion-item>
+        <ion-item >
+          <div class="col col-left">
+            Severity: {{report.severity}}
+          </div>
+        </ion-item>
+        <ion-item>
+          <div class="col col-left">
+            Trade: {{report.trade}}
+          </div>
+        </ion-item>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
